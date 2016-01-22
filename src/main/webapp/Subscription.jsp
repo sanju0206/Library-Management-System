@@ -16,9 +16,9 @@
 	<center>
 
 		<h2>Subscription Form</h2>
-		<form action="SubscriptionForm" method="get">
-			Userid : <input type="text" name="userid" /> <br> <br>
-			Name : <input type="text" name="name" /> <br> <br>
+		<form action="SubscriptionForm1" method="get">
+			UserID : <input type="text" name="user_id" /> <br> <br>
+			Name : <input type="text" name="user_name" /> <br> <br>
 			Password : <input type="password" name="passwd" /> <br> <br>
 			Confirm Password : <input type="password" name="confirmpasswd" /> <br>
 			<br> Occupation : <input type="text" name="occupation" /> <br>

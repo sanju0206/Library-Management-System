@@ -4,24 +4,28 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+
+  <servlet>
+  	<servlet-name>SubscriptionForm1</servlet-name>
+  	<display-name>SubscriptionForm1</display-name>
+  	<description></description>
+  	<servlet-class>com.library.SubscriptionForm1</servlet-class>
+  </servlet>
   <servlet>
   	<servlet-name>AuthenticateUsers</servlet-name>
   	<display-name>AuthenticateUsers</display-name>
   	<description></description>
   	<servlet-class>com.library.AuthenticateUsers</servlet-class>
   </servlet>
-  <servlet>
-  	<servlet-name>SubscriptionForm</servlet-name>
-  	<display-name>SubscriptionForm</display-name>
-  	<description></description>
-  	<servlet-class>com.library.SubscriptionForm</servlet-class>
-  </servlet>
+
+
+  <servlet-mapping>
+  	<servlet-name>SubscriptionForm1</servlet-name>
+  	<url-pattern>/SubscriptionForm1</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>AuthenticateUsers</servlet-name>
   	<url-pattern>/AuthenticateUsers</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>SubscriptionForm</servlet-name>
-  	<url-pattern>/SubscriptionForm</url-pattern>
   </servlet-mapping>
 </web-app>
