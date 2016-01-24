@@ -12,7 +12,7 @@
 <h2><center>Record Added Please Login Now</center></h2> </br>
 
 
-<form action="AuthenticateUsers" method="get">
+<form action="LoginServlet" method="post">
 	<P align=right> Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <input type="text" name="name" /> <br> <br>
 	Password : <input type="password" name="passwd" /> <br> <br> 
 	<input type="submit" value="Login"/> <br>

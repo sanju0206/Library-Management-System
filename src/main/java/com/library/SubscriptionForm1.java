@@ -23,30 +23,26 @@ public class SubscriptionForm1 extends HttpServlet {
 		response.setContentType("text/html");
 		try{
 		Class.forName("com.mysql.jdbc.Driver");
-		Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1/library","root","protect");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1/vedic","root","sanju0206");
 		
-		String u_Id = request.getParameter("user_id");
-		String u_name = request.getParameter("user_name");
-		String u_passwd = request.getParameter("passwd");
-		String u_confirmpasswd = request.getParameter("confirmpasswd");
-		String u_occupation = request.getParameter("occupation");
-		String u_email = request.getParameter("email");
-		String u_address = request.getParameter("address");
-		
+		String userid = request.getParameter("userid");
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		String occupation = request.getParameter("occupation");
+		String emailid = request.getParameter("emailid");
+		String address = request.getParameter("address");
 		
 		
 		
-		PreparedStatement pstmt = conn.prepareStatement("insert into SUBSCRIPTION values(?,?,?,?,?,?,?)");
-		pstmt.setString(1, u_Id);
-		pstmt.setString(2, u_name);
-		pstmt.setString(3, u_passwd );
-		pstmt.setString(4,u_confirmpasswd);
-		pstmt.setString(5, u_occupation);
-		pstmt.setString(6, u_email);
-		pstmt.setString(7, u_address);
+		
+		PreparedStatement pstmt = conn.prepareStatement("insert into Subscription values(?,?,?,?,?,?)");
+		pstmt.setString(1, userid);
+		pstmt.setString(2, username);
+		pstmt.setString(3, password );
+		pstmt.setString(4, occupation);
+		pstmt.setString(5, emailid);
+		pstmt.setString(6, address);
 		pstmt.execute();
-		
-		
 		
 		
 		//out.println("Record Added");
@@ -54,8 +50,6 @@ public class SubscriptionForm1 extends HttpServlet {
 		//stmt.close();
 		
 		conn.close();
-		
-		
 		
 		}
 		

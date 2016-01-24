@@ -12,11 +12,18 @@
   	<description></description>
   	<servlet-class>com.library.SubscriptionForm1</servlet-class>
   </servlet>
+  
   <servlet>
-  	<servlet-name>AuthenticateUsers</servlet-name>
-  	<display-name>AuthenticateUsers</display-name>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
   	<description></description>
-  	<servlet-class>com.library.AuthenticateUsers</servlet-class>
+  	<servlet-class>com.library.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WelcomeUsers</servlet-name>
+  	<display-name>WelcomeUsers</display-name>
+  	<description></description>
+  	<servlet-class>com.lirary.WelcomeUsers</servlet-class>
   </servlet>
 
 
@@ -24,8 +31,14 @@
   	<servlet-name>SubscriptionForm1</servlet-name>
   	<url-pattern>/SubscriptionForm1</url-pattern>
   </servlet-mapping>
+  
   <servlet-mapping>
-  	<servlet-name>AuthenticateUsers</servlet-name>
-  	<url-pattern>/AuthenticateUsers</url-pattern>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WelcomeUsers</servlet-name>
+  	<url-pattern>/WelcomeUsers</url-pattern>
+  </servlet-mapping>
+ 
 </web-app>
