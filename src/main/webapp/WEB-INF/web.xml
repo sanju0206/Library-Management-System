@@ -25,6 +25,24 @@
   	<description></description>
   	<servlet-class>com.lirary.WelcomeUsers</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>IssueServlet</servlet-name>
+  	<display-name>IssueServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.library.IssueServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddBookServlet</servlet-name>
+  	<display-name>AddBookServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.library.AddBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SerachBarServlet</servlet-name>
+  	<display-name>SerachBarServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.library.SerachBarServlet</servlet-class>
+  </servlet>
 
 
   <servlet-mapping>
@@ -39,6 +57,18 @@
   <servlet-mapping>
   	<servlet-name>WelcomeUsers</servlet-name>
   	<url-pattern>/WelcomeUsers</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>IssueServlet</servlet-name>
+  	<url-pattern>/IssueServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddBookServlet</servlet-name>
+  	<url-pattern>/AddBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SerachBarServlet</servlet-name>
+  	<url-pattern>/SerachBarServlet</url-pattern>
   </servlet-mapping>
  
 </web-app>

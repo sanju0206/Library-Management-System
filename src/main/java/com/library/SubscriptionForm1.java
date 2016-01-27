@@ -27,7 +27,7 @@ public class SubscriptionForm1 extends HttpServlet {
 		
 		String userid = request.getParameter("userid");
 		String username = request.getParameter("username");
-		String password = request.getParameter("password");
+		String passwd = request.getParameter("passwd");
 		String occupation = request.getParameter("occupation");
 		String emailid = request.getParameter("emailid");
 		String address = request.getParameter("address");
@@ -38,7 +38,7 @@ public class SubscriptionForm1 extends HttpServlet {
 		PreparedStatement pstmt = conn.prepareStatement("insert into Subscription values(?,?,?,?,?,?)");
 		pstmt.setString(1, userid);
 		pstmt.setString(2, username);
-		pstmt.setString(3, password );
+		pstmt.setString(3, passwd );
 		pstmt.setString(4, occupation);
 		pstmt.setString(5, emailid);
 		pstmt.setString(6, address);

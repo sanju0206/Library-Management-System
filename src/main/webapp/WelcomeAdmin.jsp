@@ -4,12 +4,27 @@
 <html>  
 <head>  
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">  
-<title>Welcome <%=session.getAttribute("username")%></title>  
+<title>Admin Welcome Page</title>  
 </head>  
-<body>  
-    <h3>Login successful!!!</h3>  
-    <h4>  
-        Hello,  
-        <%=session.getAttribute("username")%></h4>  
+<body> 
+<h2><center>Library Management System</center></h2> </br>
+ 
+    <P align=center>
+		<a href="index.jsp"><u>[BACK]</u></a>
+	</P> 
+	<h2><center>Admin Welcome Page</center></h2> </br>
+	<P align=left>
+		<a href="AddBooks.jsp"><u>Add Books</u></a>
+	</P>
+	<P align=left>
+		<a href="Subscription.jsp"><u>Add User</u></a>
+	</P> 
+	<P align=left>
+		<a href="BookList.jsp"><u>Books list</u></a>
+	</P> 
+	<P align=left>
+		<a href="Viewupdatedelete.jsp"><u>View, update and delete</u></a>
+	</P> 
+	 
 </body>  
 </html>

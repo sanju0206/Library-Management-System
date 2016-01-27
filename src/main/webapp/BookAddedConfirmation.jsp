@@ -9,23 +9,10 @@
 <body>
 
 <h2><center>Library Management System</center></h2> </br>
-<h2><center>Record Added Please Login Now</center></h2> </br>
-
-
-<form action="LoginServlet" method="post">
-	<P align=right> Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <input type="text" name="name" /> <br> <br>
-	Password : <input type="password" name="passwd" /> <br> <br> 
-	<input type="submit" value="Login"/> <br>
-</form>
-</P>
+<h2><center>Book Added Successfully</center></h2> </br>
 
 <P align=right>
-if new click
-<a href="Subscription.jsp"><u>SUBSCRIPTION</u></a>
+<a href="WelcomeAdmin.jsp"><u>Admin Home</u></a>
 </P>
-
-
-
-
 </body>
 </html>

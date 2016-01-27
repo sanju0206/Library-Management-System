@@ -17,13 +17,13 @@
 
 		<h2>Subscription Form</h2>
 		<form action="SubscriptionForm1" method="get">
-			UserID : <input type="text" name="userid" /> <br> <br>
-			Name : <input type="text" name="username" /> <br> <br>
-			Password : <input type="password" name="passwd" /> <br> <br>
-			Confirm Password : <input type="password" name="confirmpasswd" /> <br>
-			<br> Occupation : <input type="text" name="occupation" /> <br>
-			<br> Email: <input type="text" name="emailid" /> <br> <br>
-			Address : <input type="text" name="address" /> <br> <br> 
+			UserID : <input type="text" name="userid" required="required"/> <br> <br>
+			Name : <input type="text" name="username" required="required" /> <br> <br>
+			Password : <input type="password" name="passwd" required="required"/> <br> <br>
+			Confirm Password : <input type="password" name="confirmpasswd" required="required"/> <br>
+			<br> Occupation : <input type="text" name="occupation" required="required"/> <br>
+			<br> Email: <input type="text" name="emailid" required="required"/> <br> <br>
+			Address : <input type="text" name="address" required="required"/> <br> <br> 
 			<input type="submit" value="Register" />
 			<input type="reset" value="Reset">
 		</form>
